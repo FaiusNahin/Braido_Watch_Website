@@ -34,10 +34,10 @@ const AdminDashboardHome = () => {
         // Admin Dashboard Home
         <>
             <Grid container spacing={5}>
-                {/* Admin Dashboard Home Left Table*/}
+                {/* Admin Dashboard Home Users Table*/}
                 <Grid item xs={12} lg={5.5}>
 
-                    {/* Admin Dashboard Home Left Table Heading */}
+                    {/* Admin Dashboard Home Users Table Heading */}
                     <Typography variant="h4" sx={{ textAlign: 'center', color: 'primary.main', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 40, md: 45 }, letterSpacing: '1px' }}>
                         Our Users
                     </Typography>
@@ -70,11 +70,11 @@ const AdminDashboardHome = () => {
                     </TableContainer>
                 </Grid>
 
-                {/* Admin Dashboard Home Right Table */}
+                {/* Admin Dashboard Home Review Table */}
                 <Grid item xs={12} lg={6.5}>
                     <Box>
 
-                        {/* Admin Dashboard Home Right Table Heading */}
+                        {/* Admin Dashboard Home Review Table Heading */}
                         <Typography variant="h4" sx={{ textAlign: 'center', color: 'secondary.main', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 40, md: 45 }, letterSpacing: '1px' }}>
                             Users Review
                         </Typography>
@@ -90,6 +90,7 @@ const AdminDashboardHome = () => {
                                         <TableCell align="left" sx={{ fontSize: 17, color: 'white' }}>Rating</TableCell>
                                     </TableRow>
                                 </TableHead>
+
                                 <TableBody>
                                     {reviews.map(review => (
                                         <TableRow
