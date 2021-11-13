@@ -6,7 +6,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <Grid container>
+        <Grid container sx={{ pb: { xs: 0, md: 2, lg: 4, xl: 6 } }}>
 
             {/* Banner Left */}
             <Grid item xs={12} sm={8} sx={{ order: { xs: 2, sm: 1 } }}>

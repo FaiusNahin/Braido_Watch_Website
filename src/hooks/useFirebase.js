@@ -99,7 +99,7 @@ const useFirebase = () => {
         fetch(`https://blooming-anchorage-11174.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => {
-                setAdmin(data.admin)
+                setAdmin(data.admin);
             })
     }, [user.email])
 
