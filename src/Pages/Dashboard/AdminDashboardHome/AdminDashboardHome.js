@@ -42,7 +42,7 @@ const AdminDashboardHome = () => {
                         Our Users
                     </Typography>
 
-                    {/* Table */}
+                    {/* Users Table */}
                     <TableContainer component={Paper} >
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                             <TableHead sx={{ backgroundColor: 'primary.main' }}>
@@ -52,6 +52,8 @@ const AdminDashboardHome = () => {
                                     <TableCell align="left" sx={{ fontSize: 17, color: 'white' }}>Role</TableCell>
                                 </TableRow>
                             </TableHead>
+
+                            {/* Users Data */}
                             <TableBody>
                                 {users.map(user => (
                                     <TableRow
@@ -79,7 +81,7 @@ const AdminDashboardHome = () => {
                             Users Review
                         </Typography>
 
-                        {/* Table */}
+                        {/* Review Table */}
                         <TableContainer component={Paper} >
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                                 <TableHead sx={{ backgroundColor: 'secondary.main' }}>
@@ -91,6 +93,7 @@ const AdminDashboardHome = () => {
                                     </TableRow>
                                 </TableHead>
 
+                                {/* Review Data */}
                                 <TableBody>
                                     {reviews.map(review => (
                                         <TableRow
