@@ -29,7 +29,9 @@ const MyOrdersTable = (props) => {
                 <TableCell sx={{ fontSize: 16 }} align="left">{orderId}</TableCell>
                 <TableCell sx={{ fontSize: 16, textTransform: 'capitalize' }} align="left">{product.name}</TableCell>
                 <TableCell sx={{ fontSize: 16 }} align="left">${product.price}</TableCell>
-                <TableCell sx={{ fontSize: 16 }} align="left">{status}</TableCell>
+                {
+                    status === 'Shipped' ? <TableCell sx={{ fontSize: 16, color: 'info.main' }} align="left">{status}</TableCell> : <TableCell sx={{ fontSize: 16 }} align="left">{status}</TableCell>
+                }
 
                 {/* Delete Button */}
                 <TableCell sx={{ fontSize: 16 }} align="left"><IconButton onClick={() => props.handelDeleteOrder(_id)} sx={{ color: 'error.main' }} aria-label="delete" size="large">
