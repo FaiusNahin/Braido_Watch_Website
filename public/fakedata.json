@@ -1,0 +1,98 @@
+[
+    {
+        "brand": "BERING",
+        "name": "bering rose gold steel mesh",
+        "price": "150.00",
+        "previousPrice": "$180.00",
+        "img": "https://i.ibb.co/9TNLr7j/watch-11.jpg",
+        "description": "This Bering womans watch features a rose gold tone dial with rose gold tone hands, fixed rose gold tone stainless steel bezel and a rose gold tone stainless steel case with a rose gold tone stainless steel mesh bracelet."
+    },
+    {
+        "brand": "TW STEEL",
+        "name": "tw steel canteen",
+        "price": "100.00",
+        "previousPrice": "$130.00",
+        "img": "https://i.ibb.co/M23ytVh/watch-13.jpg",
+        "description": "The icon is back! Original Canteen style timepiece with a fresh new look. The TW1015 is powered by a Swiss made chronograph movement and features a PVD brushed bronze plated case, anti-reflection sapphire crystal."
+    },
+    {
+        "brand": "BERING",
+        "name": "bering aurora collection",
+        "price": "75.00",
+        "previousPrice": "$85.00",
+        "img": "https://i.ibb.co/NtgVFVp/watch-3.jpg",
+        "description": "The BERING watch has a highly scratch-resistant and flat sapphire crystal covering the green/purple dial True Aurora Watch Collection | Inspired by the Northern Lights - this collection transfers this phenomenon into bright watches."
+    },
+    {
+        "brand": "Timberland ",
+        "name": "timberland heritage reimagined",
+        "price": "59.00",
+        "previousPrice": "$70.00",
+        "img": "https://i.ibb.co/pz2GLBJ/watch-4.jpg",
+        "description": "From the makers of Timberland boots, we bring you the Timberland watch collection.  Featuring dual time, 24hr time and day dials as well as a timer function.Leather Straps are the same grade of Leather as the famous Timberland Boots, Screw back cases."
+    },
+    {
+        "brand": "CLUSE",
+        "name": "cluse minuit",
+        "price": "35.00",
+        "previousPrice": "$50.00",
+        "img": "https://i.ibb.co/7R1QvMs/watch-5.jpg",
+        "description": "Our Minuit collection pays tribute to starry nights and elegant evening looks. The delicate design of this featherlight watch makes it the perfect accessory for a fashionable, yet subtle result. The watch features a 33 mm case."
+    },
+    {
+        "brand": "CASTUS FIESTA",
+        "name": "cactus summer splash",
+        "price": "300.00",
+        "previousPrice": "$350.00",
+        "img": "https://i.ibb.co/NmkdhLZ/watch-6.jpg",
+        "description": "This splashproof range from Cactus is super cool and colourful, and is 30m water resistant. What this means is whatever you do – do NOT wear this swimming or in the shower! It’s splashproof and rainproof only, that’s okay, but if you wear it swimming."
+    },
+    {
+        "brand": "TASMAN",
+        "name": "police tasman",
+        "price": "350.00",
+        "previousPrice": "$400.00",
+        "img": "https://i.ibb.co/4MKXz6S/watch-7.jpg",
+        "description": "Taman Mens Watch by POLICE Clear Mineral Dial Glass and Stainless Steel Case in 47 x 55.5 mm Quartz Movement with Multifunction and Date Features Water resistant up to 50 meters Each product comes with the brands original packaging."
+    },
+    {
+        "brand": "PAUL HEWITT",
+        "name": "paul hewitt ocean line",
+        "price": "250.00",
+        "previousPrice": "$280.00",
+        "img": "https://i.ibb.co/0XSrH0K/watch-8.jpg",
+        "description": "The PAUL HEWITT Ocean Line is an impressive watch for women. You may wear it alone or combine it with other fashion accessories. The case of the waterproof watch for women is made of rosegold stainless steel and the meshband is also rosegold colored."
+    },
+    {
+        "brand": "LORUS",
+        "name": "lorus youth digital",
+        "price": "180.00",
+        "previousPrice": "$200.00",
+        "img": "https://i.ibb.co/TKHjtd8/watch-9.jpg",
+        "description": "Lorus is one of the brands made and marketed by the world famous Seiko Watch Corporation who also make Pulsar watches, Seiko watches and Seiko and Lorus clocks. The watch features a 33 mm case, where black is combined with rose gold."
+    },
+    {
+        "brand": "PAUL HEWITT",
+        "name": "paul hewitt breakwater blue lagoon",
+        "price": "49.00",
+        "previousPrice": "$60.00",
+        "img": "https://i.ibb.co/F6GNfPC/watch-10.jpg",
+        "description": "The PAUL HEWITT stainless steel watch for men comes with a great design that will appeal to a sporty attire. Wear it alone or in combination with other accessories to complete a casual outfit. The waterproof watch for men is made of gold stainless steel."
+    },
+    {
+        "brand": "G-SHOCK",
+        "name": "g-shock digital",
+        "price": "139.00",
+        "previousPrice": "$189.00",
+        "img": "https://i.ibb.co/L99PQY4/watch-2.jpg",
+        "description": "Indulge your passionate side and stargaze with a G-STEEL inspired by Mars. The GSTB400MV bezel comes in reddish copper to evoke the hue of Mars. Connect to your smartphone via Bluetooth® and the dedicated G-SHOCK CONNECTED app coordinates with Internet timeservers."
+    },
+    {
+        "brand": "ESPRIT",
+        "name": "esprit kyla 2 tone",
+        "price": "88.00",
+        "previousPrice": "$100.00",
+        "img": "https://i.ibb.co/nm56jtj/watch-12.jpg",
+        "description": "You may wear it alone or combine it with other fashion accessories. Function/Movement: Quartz Strap Material: Stainless Steel Glass Material: Mineral Glass Case Dial Color: Mother of Pearl Case Size: 34mm Features: Analog Water Resistance: 5 Atm Water Resistance."
+    }
+]

@@ -1,0 +1,39 @@
+#login-form{
+    padding: 0px 10px;
+}
+#login-email {
+    /* border-radius:0px!important; */
+}
+.forget-pass{
+    text-decoration: none;
+    margin: 0px 8px;
+    color: #c5c4c4;
+}
+.forget-pass:hover{
+    color: #a99577;
+}
+#login-btn{
+    letter-spacing: .2em;
+    font-weight: 600;
+    transition: all .35s ease-in-out;
+}
+#login-btn:hover{
+    color:white;
+    background-color:#8d7848;
+}
+#google-signIn-btn{
+    background-color:#a28a54;
+    letter-spacing: .15em;
+    font-weight: 600;
+    transition: all .35s ease-in-out;
+}
+#google-signIn-btn:hover{
+    color:white;
+    background-color:rgb(60 60 60);
+}
+
+@media only screen and (max-width:688px){
+    #login-form{
+        padding: 0px;
+    }
+}

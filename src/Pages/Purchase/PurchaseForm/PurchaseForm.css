@@ -1,0 +1,50 @@
+.checkout-form{
+    width: 100%;
+}
+.input-fields{
+    width: 91.5%;
+    height: 48px;
+    font-size:17px;
+    color:#606060;
+    font-weight:300;
+    font-family: 'Sofia Pro',sans-serif;
+    padding:0px 15px;
+    margin:9px 0px;
+    border:1px solid #e9e9e9;
+}
+.checkout-btn{
+    border-radius: 0%;
+    font-family: 'Sofia Pro',sans-serif;
+    width:70%;
+    height:52px;
+    margin:9px 0px;
+    font-size: 15px;
+    border:2px solid #a99577;
+    color:rgb(93, 93, 93);
+    background-color:white;
+    transition: all .35s ease-in-out;
+    cursor: pointer;
+}
+    
+.checkout-btn:hover{
+    color:white;
+    background-color:#a99577;
+    border: 2px solid #a99577;
+}
+
+@media only screen and (max-width:688px){
+    .input-fields{
+        width: 89%;
+    }
+    .checkout-btn{
+        width:75%;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:991px){
+    .purchase-hr{
+        width:50%!important;
+    }
+    .checkout-btn{
+        width:45%;
+    }
+}

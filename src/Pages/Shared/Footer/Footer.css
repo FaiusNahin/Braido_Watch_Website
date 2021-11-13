@@ -1,0 +1,36 @@
+.follow-us-icon{
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+}
+.follow-us-icon:hover{
+    color:#8d7848!important; 
+    border: 2px solid #8d7848;
+}
+
+.newsletter-field{
+    background-color: white;
+     border:0;
+     padding: 15px 10px;
+     width: 55%;
+     font-size:15px;
+}
+.newsletter-button{
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: .2em;
+    line-height: 18px;
+    transition: .3s;
+    padding: 15px 20px;
+}
+.newsletter-button:hover{
+    background-color: #8d7848;
+}

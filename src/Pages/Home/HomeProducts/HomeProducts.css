@@ -1,0 +1,37 @@
+.product-thumb{
+    position: relative;
+}
+.save-caption{
+    position: absolute;
+    color: white;
+    font-size: 13px ;
+    background-color:#a99577;
+    right: 10px;
+    top: 10px;
+    padding: 5px 15px;
+}
+.product-name:hover{
+    color: #a99577!important;
+}
+#product-container:hover #product-img{
+opacity: 0.75;
+}
+#product-container:hover #product-card{
+    display:none;
+    transition: 2s ease-in-out;
+}
+#product-container:hover #buy-now-btn{
+    display:block;
+}
+#buy-now-btn{
+    display:none;
+    color:rgb(93, 93, 93);
+    border-color:#a99577;
+    transition: .35s ease-in-out;
+}
+#buy-now-btn:hover{
+    color:white;
+    background-color:#a99577;
+    border: 2px solid #a99577;
+}
+

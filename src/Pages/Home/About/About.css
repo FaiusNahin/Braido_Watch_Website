@@ -1,0 +1,17 @@
+#about-container{
+    background-image: url(../../../images/about.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll;
+}
+#explore-now-btn{
+    color:rgb(93, 93, 93);
+    border-color:#a99577;
+    transition: all .35s ease-in-out;
+}
+#explore-now-btn:hover{
+    color:white;
+    background-color:#a99577;
+    border: 2px solid #a99577;
+}

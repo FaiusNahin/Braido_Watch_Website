@@ -1,0 +1,8 @@
+#partner-img img{
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+#partner-img:hover {
+    transform: scale(1.1);
+   
+}

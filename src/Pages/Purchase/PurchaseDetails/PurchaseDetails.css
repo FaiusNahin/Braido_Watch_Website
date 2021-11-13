@@ -1,0 +1,6 @@
+#products-details-name{
+    cursor: pointer;
+}
+#products-details-name:hover{
+    color: #a99577;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Montserrat:wght@700&display=swap');
+
+.banner-heading{
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+}
+.banner-left-img{
+    width: 45%;
+    transform: translate(0px, 80px);
+}
+
+@media only screen and (max-width:688px){
+    .banner-left-img{
+        width: 48%;
+        transform: translate(0px, 45px);
+    }
+}
+@media screen and (min-width:689px) and (max-width:991px){
+    .banner-left-img{
+        transform: translate(0px, 30px);
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .banner-left-img{
+        transform: translate(0px, 45px);
+    }
+}

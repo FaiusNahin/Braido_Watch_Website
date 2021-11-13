@@ -1,0 +1,24 @@
+#review-container{
+    background-image: url(../../../images/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll;
+    height: 100%;
+}
+
+@media only screen and (max-width:688px){
+    #review-container{
+        background-image: url(../../../images/about.png);
+    }
+}
+@media only screen and (min-width:689px) and (max-width:991px){
+    #review-container{
+        background-image: url(../../../images/about.png);
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    #review-container{
+        background-image: url(../../../images/about.png);
+    }
+}

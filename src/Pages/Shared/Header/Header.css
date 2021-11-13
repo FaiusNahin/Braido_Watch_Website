@@ -1,0 +1,13 @@
+/* Navs */
+.mobile-links{
+    font-size:18px;
+    font-weight:500;
+    color:black;
+    text-decoration: none;
+    line-height:40px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+.header-links:hover{
+color:#8d7848;
+}
