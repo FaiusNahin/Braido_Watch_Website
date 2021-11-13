@@ -4,8 +4,11 @@ import './Partner.css';
 
 const Partners = () => {
     return (
+        // Partner
         <Container>
             <Grid container columnSpacing={{ xs: 0, sm: 3, md: 2 }} sx={{ py: .7 }}>
+
+                {/* Partner Images */}
                 <Grid item xs={4} sm={4} md={2.4} id="partner-img">
                     <img style={{ width: '100%' }} src="https://i.ibb.co/551vx3R/partner-1.png" alt="" />
                 </Grid>

@@ -5,6 +5,7 @@ import { Box, Button, CardMedia } from '@mui/material';
 
 const NotFound = () => {
     return (
+        // Not Found
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             {/* NotFound Images */}
             <CardMedia
@@ -14,6 +15,7 @@ const NotFound = () => {
                 alt=""
             />
             <br />
+
             {/* Back To Home Button*/}
             <Link to="/" style={{ textDecoration: 'none' }}><Button variant="contained" sx={{ fontSize: 20, my: 3, px: { xs: 3, md: 6 }, py: { xs: 0.5, md: 1 } }} >Back To Home</Button></Link>
         </Box>

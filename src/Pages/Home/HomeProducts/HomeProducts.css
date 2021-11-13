@@ -1,6 +1,8 @@
+/* Products Image */
 .product-thumb{
     position: relative;
 }
+/* Save caption */
 .save-caption{
     position: absolute;
     color: white;
@@ -10,6 +12,7 @@
     top: 10px;
     padding: 5px 15px;
 }
+/* Product Details */
 .product-name:hover{
     color: #a99577!important;
 }
@@ -23,6 +26,7 @@ opacity: 0.75;
 #product-container:hover #buy-now-btn{
     display:block;
 }
+/* Buy Now Button */
 #buy-now-btn{
     display:none;
     color:rgb(93, 93, 93);

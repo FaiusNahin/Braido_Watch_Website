@@ -7,7 +7,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://blooming-anchorage-11174.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -16,7 +16,9 @@ const Products = () => {
     ;
 
     return (
+        // Products
         <Container>
+            {/* Products Heading */}
             <Box sx={{ textAlign: 'center', py: 5 }}>
                 <Typography variant="body1" sx={{ color: '#a99577', fontSize: { xs: 15, sm: 16 }, fontFamily: "'Sofia Pro',sans-serif", letterSpacing: '.25em', fontWeight: 500 }}>
                     OUR PRODUCTS
@@ -26,6 +28,7 @@ const Products = () => {
                 </Typography>
             </Box>
 
+            {/* Products Card*/}
             <Grid container spacing={4}>
                 {
                     homeProducts.map(product => <HomeProducts

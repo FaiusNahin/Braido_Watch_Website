@@ -12,7 +12,7 @@ const Purchase = () => {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://blooming-anchorage-11174.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [productId]);
@@ -21,9 +21,12 @@ const Purchase = () => {
         <>
             <Header></Header>
 
+            {/* Purchase */}
             <Container sx={{ my: 5, pb: 8 }}>
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={12} md={8}>
+
+                        {/* Product Details Heading */}
                         <Typography variant='h4' sx={{ color: '#2c2c2c', fontFamily: "'Playfair Display',serif;", fontSize: 32, mb: 2 }}>
                             Products
                         </Typography>
@@ -35,11 +38,13 @@ const Purchase = () => {
                             }
                         </>
 
+                        {/* Continue Shopping Button */}
                         <NavLink to="/explore" style={{ textDecoration: 'none' }}>
                             <Button id="explore-now-btn" variant="outlined" sx={{ borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", px: 5.5, py: 1.5, border: 2, fontSize: 15, my: 4 }}>CONTINUE SHOPPING</Button>
                         </NavLink>
                     </Grid>
 
+                    {/* Purchase Form */}
                     <Grid item xs={12} sm={12} md={4}>
                         {
                             <PurchaseForm></PurchaseForm>

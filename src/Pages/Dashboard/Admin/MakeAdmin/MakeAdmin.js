@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Alert, Box, Button, TextField, Typography } from '@mui/material';
-import useAuth from '../../../../hooks/useAuth';
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
@@ -14,7 +13,7 @@ const MakeAdmin = () => {
 
         e.preventDefault();
 
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://blooming-anchorage-11174.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -31,14 +30,15 @@ const MakeAdmin = () => {
     }
 
     return (
+        // Make Admin Form
         <Box sx={{ textAlign: 'center' }}>
+
+            {/* Make Admin headings */}
             <Typography variant="h4" sx={{ textAlign: 'center', color: '#2c2c2c', pt: 1, pb: 2, fontFamily: "'Playfair Display',serif", fontSize: { xs: 37, md: 42 }, letterSpacing: '1px' }}>
                 Make An Admin
             </Typography>
 
-            <form onSubmit={handleAdminSubmit} style={{ width: '100%' }}>
-
-            </form>
+            {/* Form */}
             <form onSubmit={handleAdminSubmit} style={{ textAlign: 'center' }}>
                 <TextField
                     sx={{ width: { xs: '90%', sm: '60%', md: '45%', lg: '35%', xl: '25%' }, my: 4, fontSize: 20 }}
@@ -53,6 +53,7 @@ const MakeAdmin = () => {
 
             </form>
 
+            {/* Alert Message */}
             {success && <Alert severity="success">Make Admin Sucessfully!</Alert>
             }
         </Box>

@@ -11,6 +11,7 @@ const HomeProducts = (props) => {
         <>
             <Grid item xs={12} sm={6} md={4}>
                 <Card sx={{ boxShadow: 0, pb: 2, borderRadius: '0%', textAlign: 'center' }} id="product-container">
+                    {/* Products Image */}
                     <Box className="product-thumb">
                         <CardMedia
                             component="img"
@@ -19,10 +20,13 @@ const HomeProducts = (props) => {
                             sx={{ width: 1 }}
                             image={img}
                         />
-                        <Typography variant="caption" className="save-caption" sx={{ fontSize: 14 }} >
+                        {/*  Save caption */}
+                        < Typography variant="caption" className="save-caption" sx={{ fontSize: 14 }} >
                             SALE
                         </Typography>
                     </Box>
+
+                    {/* Products Details */}
                     <CardContent id="product-card" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography variant="caption" component="div" sx={{ color: '#a0a0a0', fontSize: { xs: 10, sm: 11 }, fontFamily: 'Jost,sans-serif' }} style={{ textTransform: 'uppercase', letterSpacing: '1.5px', }}>
                             {brand}
@@ -38,6 +42,8 @@ const HomeProducts = (props) => {
                             {description.slice(0, 30)}...
                         </Typography>
                     </CardContent>
+
+                    {/* Buy Now Button */}
                     <Box id="button-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <NavLink to={`/placeOrder/${_id}`} style={{ textDecoration: 'none' }}>
                             <Button id="buy-now-btn" variant="outlined" sx={{ borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", px: 4, py: 1, border: 2, fontSize: 15, my: 5 }}>BUY NOW</Button>

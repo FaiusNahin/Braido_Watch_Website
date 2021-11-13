@@ -1,16 +1,15 @@
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
 import React from 'react';
+import { Typography, Box } from '@mui/material';
 
-const Payment = () => {
+const DashboardHome = () => {
     return (
-        // Payment
+        // User Dashboard Home
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
             <Typography variant="h4" sx={{ textAlign: 'center', color: 'secondary.main', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 41, md: 47 }, letterSpacing: '1px' }}>
-                Payment System is Coming Soon
+                User Dashboard is On the Way!! Coming Soon...
             </Typography>
         </Box>
     );
 };
 
-export default Payment;
+export default DashboardHome;

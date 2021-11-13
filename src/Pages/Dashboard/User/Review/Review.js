@@ -68,7 +68,7 @@ const Review = ({ open, setOpen, handleClose }) => {
             ...reviewInfo
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://blooming-anchorage-11174.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -87,18 +87,24 @@ const Review = ({ open, setOpen, handleClose }) => {
     }
 
     return (
+        // Review Form
         <Box>
             <BootstrapDialog
                 onClose={handleClose}
                 aria-labelledby="customized-dialog-title"
                 open={open}
             >
+
+                {/* Review Headings */}
                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
                     <Typography variant="body1" sx={{ color: '#a99577', textAlign: 'center', fontSize: { xs: 20, sm: 24 }, fontFamily: "'Sofia Pro',sans-serif", letterSpacing: '.20em', fontWeight: 500, mt: 2 }}>
                         REVIEW
                     </Typography>
                 </BootstrapDialogTitle>
+
                 <DialogContent sx={{}}>
+
+                    {/* Form */}
                     <Box sx={{}}>
                         <form onSubmit={handleReviewForm} style={{ textAlign: 'center' }}>
                             <TextField
@@ -151,6 +157,7 @@ const Review = ({ open, setOpen, handleClose }) => {
                                 variant="outlined"
                             />
 
+                            {/* Submit Button */}
                             <Button type="submit" id="explore-now-btn" variant="outlined" sx={{ borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", px: 5.5, py: 1.5, border: 2, fontSize: 15, my: 1.2, width: { xs: '65%', sm: '40%', md: '45%' } }}>Submit</Button>
                         </form>
                     </Box>

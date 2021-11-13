@@ -8,13 +8,18 @@ const PurchaseDetails = ({ children }) => {
 
     return (
         <>
+            {/* Product Details */}
             <Card sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row', lg: 'row' }, boxShadow: 0, borderRadius: '0%' }} style={{ border: '1px solid #e9e9e9' }}>
+
+                {/* Product Image */}
                 <CardMedia
                     component="img"
                     sx={{ width: { xs: '100%', sm: '32%' } }}
                     image={img}
                     alt="Live from space album cover"
                 />
+
+                {/* Details */}
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     <CardContent sx={{ flex: '1 0 auto' }}>
                         <Typography id="products-details-name" variant="h5" sx={{ color: '#2c2c2ce3', fontFamily: "'Playfair Display',serif;", fontSize: 27, mb: 1 }} style={{ textTransform: 'capitalize' }}>

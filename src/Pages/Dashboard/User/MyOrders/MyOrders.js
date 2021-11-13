@@ -16,7 +16,7 @@ const MyOrders = () => {
 
     // Get Current User Orders
     React.useEffect(() => {
-        fetch(`http://localhost:5000/order/?email=${user.email}`)
+        fetch(`https://blooming-anchorage-11174.herokuapp.com/order/?email=${user.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [user.email])
@@ -25,7 +25,7 @@ const MyOrders = () => {
     const handelDeleteOrder = _id => {
         const query = window.confirm('Are You Sure To Delete This Order?');
         if (query) {
-            fetch(`http://localhost:5000/orders/${_id}`, {
+            fetch(`https://blooming-anchorage-11174.herokuapp.com/orders/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -40,11 +40,14 @@ const MyOrders = () => {
     }
 
     return (
+        // My Orders
         <>
+            {/* My Orders Headings */}
             <Typography variant="h4" sx={{ textAlign: 'center', color: '#2c2c2c', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 41, md: 47 }, letterSpacing: '1px' }}>
                 My Orders
             </Typography>
 
+            {/* My Orders Table */}
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead sx={{ backgroundColor: 'rgb(47 47 47)' }}>
@@ -57,6 +60,8 @@ const MyOrders = () => {
                             <TableCell sx={{ fontSize: 17, color: 'white' }} align="left">Action</TableCell>
                         </TableRow>
                     </TableHead>
+
+                    {/* Table Body */}
                     <TableBody>
                         {orders.map(order => <MyOrdersTable
                             key={order._id}

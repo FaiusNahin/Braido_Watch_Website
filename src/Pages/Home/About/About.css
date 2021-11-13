@@ -1,3 +1,4 @@
+/* About Container */
 #about-container{
     background-image: url(../../../images/about.png);
     background-repeat: no-repeat;
@@ -5,6 +6,7 @@
     background-size: auto;
     background-attachment: scroll;
 }
+/* Explore Now Button */
 #explore-now-btn{
     color:rgb(93, 93, 93);
     border-color:#a99577;

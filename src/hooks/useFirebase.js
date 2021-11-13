@@ -13,6 +13,7 @@ const useFirebase = () => {
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
+    // Authentication For Email & Password Registration
     const registerUser = (email, password, name, history) => {
         setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
@@ -38,6 +39,7 @@ const useFirebase = () => {
             });
     }
 
+    // Authentication For Email & Password Login
     const loginUser = (email, password, location, history) => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
@@ -53,6 +55,7 @@ const useFirebase = () => {
             });
     }
 
+    // Authentication For Google Sign In
     const signInWithGoogle = (location, history) => {
         setIsLoading(true);
         signInWithPopup(auth, googleProvider)
@@ -87,14 +90,16 @@ const useFirebase = () => {
         return () => unsubscribe;
     }, [auth])
 
+    // Check Admin
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://blooming-anchorage-11174.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data.admin)
             })
     }, [user.email])
 
+    // Logout
     const logOut = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
@@ -106,9 +111,10 @@ const useFirebase = () => {
         });
     }
 
+    // Save Users to Database
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName }
-        fetch('http://localhost:5000/users', {
+        fetch('https://blooming-anchorage-11174.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

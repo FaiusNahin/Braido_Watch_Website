@@ -8,12 +8,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Typography } from '@mui/material';
 import ManageAllOrdersTable from '../ManageAllOrdersTable/ManageAllOrdersTable';
+import { Box } from '@mui/material';
 
 const ManageAllOrders = () => {
     const [orders, setOrders] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://blooming-anchorage-11174.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
@@ -25,7 +26,7 @@ const ManageAllOrders = () => {
 
         const permission = window.confirm('Are You Sure to Change this Order Status ?')
         if (permission) {
-            fetch(`http://localhost:5000/orders/${_id}`, {
+            fetch(`https://blooming-anchorage-11174.herokuapp.com/orders/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -37,7 +38,7 @@ const ManageAllOrders = () => {
                     if (data.modifiedCount > 0) {
                         alert('Status Updated');
 
-                        fetch(`http://localhost:5000/orders`)
+                        fetch(`https://blooming-anchorage-11174.herokuapp.com/orders`)
                             .then(res => res.json())
                             .then(data => setOrders(data));
                     }
@@ -49,7 +50,7 @@ const ManageAllOrders = () => {
     const handelDeleteOrder = _id => {
         const query = window.confirm('Are You Sure To Delete This Order?');
         if (query) {
-            fetch(`http://localhost:5000/orders/${_id}`, {
+            fetch(`https://blooming-anchorage-11174.herokuapp.com/orders/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -64,12 +65,14 @@ const ManageAllOrders = () => {
     }
 
     return (
-        <>
+        // Manage All Orders
+        <Box>
+            {/* Manage All Orders Headings */}
             <Typography variant="h4" sx={{ textAlign: 'center', color: '#2c2c2c', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 41, md: 47 }, letterSpacing: '1px' }}>
                 All Orders
             </Typography>
 
-
+            {/* Manage All Orders table */}
             <TableContainer component={Paper} >
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead sx={{ backgroundColor: 'rgb(47 47 47)' }}>
@@ -82,6 +85,7 @@ const ManageAllOrders = () => {
                             <TableCell align="left" sx={{ fontSize: 17, color: 'white' }}>Action</TableCell>
                         </TableRow>
                     </TableHead>
+                    {/* Manage All Orders Table Body */}
                     <TableBody>
                         {orders.map(order => <ManageAllOrdersTable
                             key={order._id}
@@ -92,7 +96,7 @@ const ManageAllOrders = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </>
+        </Box>
     );
 }
 

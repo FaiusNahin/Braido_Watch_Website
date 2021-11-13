@@ -44,17 +44,22 @@ const Registration = () => {
         <>
             <Header></Header>
 
+            {/* Registration */}
             <Container>
                 <Grid container spacing={2} sx={{ py: 5 }}>
                     <Grid item xs={12} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <Card sx={{ py: 5, boxShadow: '0px 7px 18px #dcdcdc63' }} >
                             <CardContent sx={{ px: { xs: .5, sm: 2 } }}>
+
+                                {/* Registration Heading */}
                                 <Typography variant="h6" sx={{ textAlign: 'center', fontWeight: 400, fontSize: 20, fontFamily: "'Sofia Pro',sans-serif", letterSpacing: '.2em' }}>
                                     REGISTER
                                 </Typography>
 
+                                {/* hr */}
                                 <hr style={{ width: '40%', height: '1px', backgroundColor: 'rgb(169 149 119 / 47%)', border: '0', borderRadius: '10px', marginTop: '0px', marginBottom: '25px' }} className="explore-hr" />
 
+                                {/* Registation Form */}
                                 <form onSubmit={handleRegistration} id="login-form" >
                                     <TextField
                                         sx={{ width: { xs: '95%', sm: '97%' }, m: 1 }}
@@ -84,14 +89,18 @@ const Registration = () => {
                                         autoComplete="current-password"
                                     />
                                     <br />
+
+                                    {/* Register Button */}
                                     <Button id="login-btn" sx={{ color: 'white', backgroundColor: 'black', width: { xs: '95%', sm: '97%' }, mx: 1, borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", py: 2, fontSize: 14 }} type="submit" >Register</Button>
 
+                                    {/* Back To Login Link */}
                                     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: 'center', justifyContent: 'center', width: { xs: '95%', sm: '97%' }, mx: 'auto', background: '#f2f2f2', border: '1px solid #e8eced', py: 1.5, mt: 3, mb: 2 }}>
                                         <NavLink className="back-to-login" to="/login" >
                                             Back To Login
                                         </NavLink>
                                     </Box>
 
+                                    {/* Google Sign In Button */}
                                     <Button onClick={handleGoogleSignIn} id="google-signIn-btn" sx={{ color: 'white', width: { xs: '95%', sm: '97%' }, mx: 1, mt: 1, borderRadius: '0%', py: 2, fontSize: 16, textTransform: 'capitalize' }} type="submit" >
                                         <CardMedia
                                             sx={{ width: { xs: '12%', sm: '8%' }, mr: 1 }}
@@ -101,6 +110,7 @@ const Registration = () => {
                                         Google Sign In
                                     </Button>
 
+                                    {/* Alert Message */}
                                     <Box sx={{ width: { xs: '95%', sm: '97%' }, mx: 'auto', pt: 1 }}>
                                         {isLoading && <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><CircularProgress color="success" /></Box>}
 

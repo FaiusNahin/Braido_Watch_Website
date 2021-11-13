@@ -8,9 +8,12 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
+        // Footer
         <Box sx={{ py: 8 }} style={{ backgroundColor: '#2f2f2f' }}>
             <Container>
                 <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
+
+                    {/* Braido Address */}
                     <Grid item lg={3} md={3} sm={6} xs={12}>
                         <Card sx={{ maxWidth: 345, boxShadow: 0 }} style={{ backgroundColor: 'transparent' }}>
                             <CardMedia
@@ -33,6 +36,7 @@ const Footer = () => {
                         </Card>
                     </Grid>
 
+                    {/* Quick Links */}
                     <Grid item lg={2} md={2} sm={4} xs={12}>
                         <Typography variant="button" color="white" sx={{ letterSpacing: 1, fontSize: 16 }}>
                             Links
@@ -48,6 +52,7 @@ const Footer = () => {
                         </Typography>
                     </Grid>
 
+                    {/* Folow Us */}
                     <Grid item lg={3} md={3} sm={4} xs={12} sx={{ mt: { xs: 2, sm: 0 } }}>
                         <Typography variant="button" color="white" sx={{ letterSpacing: 1, fontSize: 16 }}>
                             Follow Us
@@ -61,6 +66,7 @@ const Footer = () => {
                         </Box>
                     </Grid>
 
+                    {/* Newsletters */}
                     <Grid item lg={4} md={4} sm={6} xs={12} sx={{ mt: { xs: 3, sm: 0 } }}>
                         <Typography variant="button" color="white" sx={{ letterSpacing: 1, fontSize: 16 }}>
                             Newsletters

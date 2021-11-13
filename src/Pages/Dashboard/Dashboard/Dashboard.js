@@ -29,7 +29,9 @@ import ManageProducts from '../../Dashboard/Admin/ManageProducts/ManageProducts'
 import ManageAllOrders from '../Admin/ManageAllOrders/ManageAllOrders';
 import MakeAdmin from '../Admin/MakeAdmin/MakeAdmin';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
-import { CardMedia } from '@mui/material';
+import UserRoute from '../../Login/UserRoute/UserRoute';
+import AdminDashboardHome from '../AdminDashboardHome/AdminDashboardHome';
+import DashboardHome from '../DashboardHome/DashboardHome';
 
 
 const drawerWidth = 230;
@@ -62,6 +64,8 @@ function Dashboard(props) {
                     </NavLink>
                     {
                         admin ? <>
+                            {/* For Admin Links */}
+
                             <NavLink to={`${url}/makeAdmin`} style={{ display: 'flex', alignItems: 'stretch', color: 'white', textDecoration: 'none', fontSize: '17px', margin: '16px 0px 16px 20px' }}>
                                 <PersonAddIcon sx={{ mr: 2 }} />Make Admin
                             </NavLink>
@@ -78,6 +82,8 @@ function Dashboard(props) {
                                 <LocalMallIcon sx={{ mr: 2 }} />Manage All Orders
                             </NavLink>
                         </> : <>
+                            {/* For User Links */}
+
                             <NavLink to={`${url}/payment`} style={{ display: 'flex', alignItems: 'stretch', color: 'white', textDecoration: 'none', fontSize: '17px', margin: '16px 0px 16px 20px' }}>
                                 <PaymentIcon sx={{ mr: 2 }} />Payment
                             </NavLink>
@@ -95,6 +101,7 @@ function Dashboard(props) {
                 </List>
             </Box>
 
+            {/* Home & Logout Links */}
             <Box sx={{ pb: 1 }} style={{ position: 'absolute', bottom: 0, left: 0 }}>
                 <List>
                     <NavLink to="/home" style={{ display: 'flex', alignItems: 'stretch', color: 'white', textDecoration: 'none', fontSize: '17px', margin: '16px 0px 16px 20px' }}>
@@ -175,23 +182,30 @@ function Dashboard(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
+
                 <Switch>
                     <Route exact path={path}>
+                        {
+                            !admin ? <DashboardHome></DashboardHome> : <AdminDashboardHome></AdminDashboardHome>
+                        }
                     </Route>
-                    <Route path={`${path}/payment`}>
+
+                    {/* User Nested route */}
+                    <UserRoute path={`${path}/payment`}>
                         <Payment></Payment>
-                    </Route>
-                    <Route path={`${path}/myOrders`}>
+                    </UserRoute>
+                    <UserRoute path={`${path}/myOrders`}>
                         <MyOrders></MyOrders>
-                    </Route>
-                    <Route path={`${path}/review`}>
+                    </UserRoute>
+                    <UserRoute path={`${path}/review`}>
                         <Review
                             open={open}
                             setOpen={setOpen}
                             handleClose={handleClose}
                         ></Review>
-                    </Route>
+                    </UserRoute>
 
+                    {/* Admin Nested route */}
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
                     </AdminRoute>
@@ -209,7 +223,6 @@ function Dashboard(props) {
                         <ManageAllOrders></ManageAllOrders>
                     </AdminRoute>
                 </Switch>
-
             </Box>
         </Box>
     );

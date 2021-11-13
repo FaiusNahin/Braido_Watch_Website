@@ -38,10 +38,13 @@ const Login = () => {
         <>
             <Header></Header>
 
+            {/* Login */}
             <Container>
                 <Grid container spacing={2} sx={{ py: 5 }}>
                     <Grid item xs={12} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <Card sx={{ py: 5, boxShadow: '0px 7px 18px #dcdcdc63' }} >
+
+                            {/* Login Logo */}
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: { xs: '90%', sm: '86%' }, mx: 'auto' }}
                                 style={{ borderBottom: '1px solid #ccc' }}>
                                 <CardMedia
@@ -56,6 +59,8 @@ const Login = () => {
                                 <Typography variant="h6" sx={{ textAlign: 'center', fontWeight: 400, fontSize: 21, fontFamily: "'Sofia Pro',sans-serif", pb: 1.5 }}>
                                     Great to have you back!
                                 </Typography>
+
+                                {/* Login Form */}
                                 <form onSubmit={handleLogin} id="login-form" >
                                     <TextField
                                         sx={{ width: { xs: '95%', sm: '97%' }, m: 1 }}
@@ -75,11 +80,15 @@ const Login = () => {
                                         autoComplete="current-password"
                                     />
                                     <br />
+
                                     <NavLink className="forget-pass" to="/login">
                                         Forget Your Password?
                                     </NavLink>
+
+                                    {/* Login Button */}
                                     <Button id="login-btn" sx={{ color: 'white', backgroundColor: 'black', width: { xs: '95%', sm: '97%' }, mt: 2, mb: 1, mx: 1, borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", py: 2, fontSize: 14 }} type="submit" >Login</Button>
 
+                                    {/* Register Now Link */}
                                     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: 'center', justifyContent: 'center', width: { xs: '95%', sm: '97%' }, mx: 'auto', background: '#f2f2f2', border: '1px solid #e8eced', py: 1.5, mt: 3, mb: 2 }}>
                                         <span>Don’t have an account?</span>
                                         <NavLink className="forget-pass" to="/registration">
@@ -87,6 +96,7 @@ const Login = () => {
                                         </NavLink>
                                     </Box>
 
+                                    {/* Google Sign in */}
                                     <Button onClick={handleGoogleSignIn} id="google-signIn-btn" sx={{ color: 'white', width: { xs: '95%', sm: '97%' }, mx: 1, mt: 1, borderRadius: '0%', py: 2, fontSize: 16, textTransform: 'capitalize' }} type="submit" >
                                         <CardMedia
                                             sx={{ width: { xs: '12%', sm: '8%' }, mr: 1 }}
@@ -96,6 +106,7 @@ const Login = () => {
                                         Google Sign In
                                     </Button>
 
+                                    {/* Alert Message*/}
                                     <Box sx={{ width: { xs: '95%', sm: '97%' }, mx: 'auto', pt: 1 }}>
                                         {isLoading && <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><CircularProgress color="success" /></Box>}
 

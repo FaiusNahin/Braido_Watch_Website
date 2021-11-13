@@ -12,7 +12,7 @@ const PurchaseForm = () => {
     const { user } = useAuth();
 
     const handlePlaceOrder = data => {
-        fetch(`http://localhost:5000/orders`, {
+        fetch(`https://blooming-anchorage-11174.herokuapp.com/orders`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -29,12 +29,15 @@ const PurchaseForm = () => {
     };
 
     return (
+        // Purchase Form
         <>
+            {/* Purchase Form heading */}
             <Typography variant='h4' sx={{ color: '#2c2c2c', fontFamily: "'Playfair Display',serif;", fontSize: 32, mb: .6 }}>
                 Contact Information
             </Typography>
             <hr style={{ width: '80%', height: '2px', backgroundColor: '#a99577', border: '0', borderRadius: '10px', marginTop: '0px', marginBottom: '20px', float: 'left' }} className="purchase-hr" />
 
+            {/* Checkout Form*/}
             <form className="checkout-form" onSubmit={handleSubmit(handlePlaceOrder)}>
                 <input defaultValue={productId} style={{ display: 'none' }} {...register("orderId")} />
                 <input defaultValue="Pending" style={{ display: 'none' }} {...register("status")} />
@@ -52,6 +55,7 @@ const PurchaseForm = () => {
                 {/* Checkout Button */}
                 <input className="checkout-btn" type="submit" value="PROCEED TO CHECKOUT" />
             </form>
+            {/* Alert Message */}
             {
                 success && <Typography sx={{ pt: 2 }} variant="caption" display="block" ><Alert severity="success" sx={{ display: 'flex', justifyContent: 'center' }}>Order Placed Successfully!</Alert></Typography>
             }

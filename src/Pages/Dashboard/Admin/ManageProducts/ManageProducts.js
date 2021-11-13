@@ -8,12 +8,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { CardMedia, IconButton, Typography } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Box } from '@mui/system';
 
 const ManageProducts = () => {
     const [products, setProducts] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://blooming-anchorage-11174.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -21,7 +22,7 @@ const ManageProducts = () => {
     const handelDeleteProduct = _id => {
         const query = window.confirm('Do You Want To Delete This Product?');
         if (query) {
-            fetch(`http://localhost:5000/products/${_id}`, {
+            fetch(`https://blooming-anchorage-11174.herokuapp.com/products/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -36,12 +37,14 @@ const ManageProducts = () => {
     }
 
     return (
-        <>
+        // Manage Products
+        <Box>
+            {/* Manage Products Headings */}
             <Typography variant="h4" sx={{ textAlign: 'center', color: '#2c2c2c', pt: 1, pb: 5, fontFamily: "'Playfair Display',serif", fontSize: { xs: 41, md: 47 }, letterSpacing: '1px' }}>
                 All Products
             </Typography>
 
-
+            {/* Manage Products Table */}
             <TableContainer component={Paper} >
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead sx={{ backgroundColor: 'rgb(47 47 47)' }}>
@@ -72,6 +75,8 @@ const ManageProducts = () => {
                                 <TableCell sx={{ fontSize: 16 }} align="left">{product.name}</TableCell>
                                 <TableCell sx={{ fontSize: 16 }} align="left">{product.brand}</TableCell>
                                 <TableCell sx={{ fontSize: 16 }} align="left">${product.price}</TableCell>
+
+                                {/* Delete Button */}
                                 <TableCell sx={{ fontSize: 16 }} align="left"><IconButton onClick={() => handelDeleteProduct(product._id)} sx={{ color: 'error.main' }} aria-label="delete" size="large">
                                     <DeleteIcon sx={{ color: 'error.main', fontSize: 26 }} />
                                 </IconButton></TableCell>
@@ -80,7 +85,7 @@ const ManageProducts = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </>
+        </Box>
     );
 }
 

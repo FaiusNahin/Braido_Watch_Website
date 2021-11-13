@@ -62,7 +62,7 @@ const AddProduct = ({ open, setOpen, handleClose }) => {
     const handleReviewForm = e => {
         e.preventDefault();
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://blooming-anchorage-11174.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -79,19 +79,23 @@ const AddProduct = ({ open, setOpen, handleClose }) => {
     }
 
     return (
+        // Add Preoduct Form
         <Box>
             <BootstrapDialog
                 onClose={handleClose}
                 aria-labelledby="customized-dialog-title"
                 open={open}
             >
+                {/* Add Product Form Headings */}
                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
                     <Typography variant="body1" sx={{ color: '#a99577', textAlign: 'center', fontSize: { xs: 20, sm: 24 }, fontFamily: "'Sofia Pro',sans-serif", letterSpacing: '.20em', fontWeight: 500, mt: 2 }}>
                         <span style={{ color: 'rgb(138 138 138)' }}>ADD A NEW</span> PRODUCT
                     </Typography>
                 </BootstrapDialogTitle>
-                <DialogContent sx={{}}>
-                    <Box sx={{}}>
+
+                <DialogContent>
+                    <Box>
+                        {/* Form */}
                         <form onSubmit={handleReviewForm} style={{ textAlign: 'center' }}>
                             <TextField
                                 sx={{ width: { xs: '100%', sm: '90%', md: '92%' }, my: 1.2 }}
@@ -145,6 +149,7 @@ const AddProduct = ({ open, setOpen, handleClose }) => {
                                 multiline
                             />
 
+                            {/* Add Product Button */}
                             <Button type="submit" id="explore-now-btn" variant="outlined" sx={{ borderRadius: '0%', fontFamily: "'Sofia Pro',sans-serif", px: 5.5, py: 1.5, border: 2, fontSize: 15, my: 1.2, width: { xs: '100%', sm: '50%' } }}>Add Product</Button>
                         </form>
                     </Box>
