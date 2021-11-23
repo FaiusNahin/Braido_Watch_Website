@@ -1,4 +1,4 @@
-# Braido A Tourism Website
+# Braido Watch Website
 
 This project was bootstrapped with Create React App & Live Site. [Link](https://niche-website-client.web.app/).
 
