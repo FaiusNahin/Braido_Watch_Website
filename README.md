@@ -2,7 +2,7 @@
 
 This project was bootstrapped with Create React App & Live Site. [Link](https://niche-website-client.web.app/).
 
-## Braido Watches
+## Braido Watch
 
 We are promised to provide best sales plan for you and we ensure that 
 you will buy classy watch.
