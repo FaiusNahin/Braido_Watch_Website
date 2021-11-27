@@ -1,7 +1,7 @@
 # Explore About "Braido Watch"
 
 This is a Full-Stack project. This is a SPA which is protected by React Router.\
-View full site on [Link Site](https://niche-website-client.web.app/).
+View full site on [Live Site](https://niche-website-client.web.app/).
 
 ## Braido Watch
 
