@@ -1,23 +1,48 @@
-# Braido Watch Website
+# Explore About "Braido Watch"
 
-This project was bootstrapped with Create React App & Live Site. [Link](https://niche-website-client.web.app/).
+This is a Full-Stack project. This is a SPA which is protected by React Router.\
+View full site on [Link Site](https://niche-website-client.web.app/).
 
 ## Braido Watch
 
 We are promised to provide best sales plan for you and we ensure that 
 you will buy classy watch.
 
-### `Details About This Project`
-Braido is a Online Watch Shop Website Where I use React Router for 
+## Features
 
-Single Page Application & used "Heroku" For clint side dynamic api & used 
+1. Build a full-stack web application which is an online watch shop where users explore products
+2. Users need to logged in then the user can place orders and should go to the dashboard
+3. Users can review products and selected orders or drop orders
+4. Admin can make a user as admin, add products and delete products, manage user orders. Admin dashboard are secured by JWT.
 
-"MongoDB" for get, push or delete information about packages.
+## Used Technologies
 
-There are some Private Route & Nested Route for Admin & User. Which is Require user & Admin Login. 
+Material UI
+JS
+React JS
+React Router .v5
+React Hook Form
+Firebase
+MongoDb for server site...
 
-For Login Process I used Firebase Authentication. 
+## Details About This Project
 
-Here is Different path for User And Admin Dashboard.
+If you visit this [Project](https://niche-website-client.web.app/), you can see it's a single page web app.\
 
-Hence I also try to do this site responsive by using Material Ui.
+Where I use React Router.v5 for build this.
+
+For [server side](https://github.com/programming-hero-web-course-4/niche-website-server-side-Sumonbhuiya) here use "heroku" server.\
+
+And for get, push, delete here use different file.
+
+Implement Private Route and Redirect history.\
+
+For login process uses Email, Password and Google sign In.
+
+Here also try to do this site responsive for mobile, tablet and desktop view.\
+
+In this case I use Material UI framework.
+
+In Dashboard here use nested route.\
+
+For admin work it's secure by using firebase JWT token
