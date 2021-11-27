@@ -18,12 +18,14 @@ you will buy classy watch.
 ## Used Technologies
 
 Material UI\
-JS\
+Javascript\
 React JS\
 React Router .v5\
 React Hook Form\
 Firebase\
-MongoDb for server site...\
+Node.js\
+Express.js\
+MongoDb
 
 ## Details About This Project
 
