@@ -29,17 +29,17 @@ MongoDb
 
 ## Details About This Project
 
-> If you visit this [Project](https://niche-website-client.web.app/), you can see it's a single page web app.\
-Where I use React Router.v5 for build this.
+> If you visit this [Project](https://niche-website-client.web.app/), you can see it's a single page application.\
+Where I use React Router for build this.
 
 > For [server side](https://github.com/FaiusNahin/Braido_Watch_Server_Side) here use "heroku" server.\
-And for get, push, delete here use different file.
+And for CRUD operations use different file.
 
 > Implement Private Route and Redirect history.\
-For login process uses Email, Password and Google sign In.
+For login process used Email, Password and Google sign In.
 
-> Here also try to do this site responsive for mobile, tablet and desktop view.\
-In this case I use Material UI framework.
+> Here also try to do this site responsive for mobile, tablet and desktop devices.\
+In this case I used Material UI framework.
 
->In Dashboard here use nested route.\
-For admin work it's secure by using firebase JWT token
+> In Dashboard here used nested route.\
+For admin dashboard it's secure by using JWT token
