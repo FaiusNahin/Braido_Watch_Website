@@ -17,13 +17,13 @@ you will buy classy watch.
 
 ## Used Technologies
 
-Material UI
-JS
-React JS
-React Router .v5
-React Hook Form
-Firebase
-MongoDb for server site...
+Material UI\
+JS\
+React JS\
+React Router .v5\
+React Hook Form\
+Firebase\
+MongoDb for server site...\
 
 ## Details About This Project
 
